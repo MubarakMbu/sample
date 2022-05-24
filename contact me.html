@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>My contact Details</h2>
+<table> 
+    <tr>
+        <td>Name</td>
+        <td>:</td>
+        <td>Mubarak</td>
+    </tr>
+    <tr>
+        <td>Mob</td>
+        <td>:</td>
+        <td>990088987</td>
+        <tr>
+            <td>Email</td>
+            <td>:</td>
+            <td>mymail@gmail.com</td>
+        </tr>
+    </tr>
+</table>
+<hr>
+<!-- form is used to take input from user-->
+<!-- method=post will post filled data to email-->
+<form action="mailto:memubark99@gmail.com" method="post" enctype="text/plain"> 
+  <label for="fname">First Name :</label>
+  <!--Not mandatory to give variable names in same sequence. can be given in any order-->      
+  <input  type="text" name="fname">
+    <label for="email">Email :</label>
+        <input name="email" type="email">
+  <label for="date">Date :</label>
+        <input name="date" type="date">
+   <label for="status">Status :</label>
+        <select name="Status" id="st">
+            <option value="M80)" selected>M80</option>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+  <!--data is not getting posted if name variable of input is not same as for variable of lable-->
+            <label for="subs">Want to subscribe for mailing list?</label>
+            <input type="checkbox">
+      <input type="submit">
+</form>
+
+
+</body>
+</html>
